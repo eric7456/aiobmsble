@@ -68,7 +68,7 @@ class BMS(BaseBMS):
         """
         return [
             {
-                "local_name": "ECO*",
+                "local_name": "ECOE*",
                 "service_uuid": normalize_uuid_str("0001"),
                 "connectable": True,
             }
