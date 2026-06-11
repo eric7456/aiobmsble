@@ -42,7 +42,7 @@ class BMS(BaseBMS):
         BMSDp("balancer", 8, 1, False, lambda x: bool(x & 0x80), 0x20),
         BMSDp("problem_code", 7, 4, False, lambda x: x & BMS._ALARM_MASK, 0x20),
     )
-    _CMDS: Final = frozenset({b"\x20", b"\x21", b"\x22"})
+    _CMDS: Final = frozenset({b"\x00", b"\x20", b"\x21", b"\x22"})
 
     def __init__(
         self,
